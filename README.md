@@ -17,6 +17,7 @@ npm run dev     # http://localhost:5173
 |---|---|
 | `src/App.jsx` | Page layout, header, details panel |
 | `src/StandardList.jsx` | Renders every shipment row |
+| `src/VirtualList.jsx` | Renders only visible rows (react-window) |
 | `src/ShipmentRow.jsx` | One fixed-height (56px) row |
 | `src/data.js` | Generates 2,000 synthetic shipments |
 | `docs/CONTEXT.md` | Who uses the page and how |

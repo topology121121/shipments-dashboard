@@ -47,6 +47,25 @@ h1 { margin: 0; font-size: 22px; }
   overflow-y: auto;
 }
 
+.scroll-area.is-virtual { overflow: hidden; }
+.virtual-container { height: 100%; }
+
+.view-switch {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.view-switch a {
+  padding: 7px 14px;
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+}
+.view-switch a + a { border-left: 1px solid var(--border); }
+.view-switch a[aria-current='page'] { background: #e8eefc; color: var(--accent); font-weight: 600; }
+
 .row {
   display: grid;
   grid-template-columns: 110px 1.4fr 1.6fr 1fr 130px 150px 90px 100px 70px;
